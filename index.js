@@ -11,10 +11,10 @@ app.post('/bfhl', (req, res) => {
             return res.status(400).json({ is_success: false, error: "Input data must be an array." });
         }
 
-        const full_name = "Aarjav Jain"; // Replace with your full name
-        const dob = "15122003";             // Replace with your Date of Birth
-        const email = "aarjavjain2022@vitbhopal.ac.in";   // Replace with your email
-        const roll_number = "22BCY10046"; // Replace with your roll number
+        const full_name = "Aarjav Jain"; 
+        const dob = "15122003";             
+        const email = "aarjavjain2022@vitbhopal.ac.in";   
+        const roll_number = "22BCY10046"; 
 
         const user_id = `${full_name.toLowerCase().replace(" ", "_")}_${dob}`;
 
